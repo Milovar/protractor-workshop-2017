@@ -25,7 +25,7 @@
     "url": "https://github.com/Milovar/protractor-workshop-2017/issues"
   },
   "homepage": "https://github.com/Milovar/protractor-workshop-2017#readme",
-  "dependencies": {
+  "dev-dependency": {
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.1.2"
   },
