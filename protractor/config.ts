@@ -1,4 +1,5 @@
 import { browser, Config } from 'protractor';
+import { reporter }   from './helpers/reporter';
 
 export const config: Config = {
    framework: 'jasmine',
@@ -6,6 +7,7 @@ export const config: Config = {
    specs: ['../test/Google.spec.js'],
    noGlobals: true,
    onPrepare: () => {
-     browser.ignoreSynchronization = true;
+	  reporter();
+      browser.ignoreSynchronization = true;	 
    }
 }
