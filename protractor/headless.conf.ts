@@ -7,11 +7,18 @@ export const config: Config = {
    specs: ['../test/Google.spec.js'],
    noGlobals: true,
    onPrepare: () => {
+	  browser.ignoreSynchronization = true;
 	  reporter();
-      browser.ignoreSynchronization = true;
+   },  
    capabilities: {
      browserName: 'chrome',
      chromeOptions: {
        args: ['--headless', '--disable-gpu', '--window-size=800,600']
-   }
+    }
+  }
 }
+
+
+ 
+ 
+ 
