@@ -7,7 +7,7 @@ export const config: Config = {
    specs: ['../test/Google.spec.js'],
    noGlobals: true,
    onPrepare: () => {
-	    browser.ignoreSynchronization = true;
+      browser.ignoreSynchronization = true;
       reporter();
    }
 }
